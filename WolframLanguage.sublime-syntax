@@ -38,6 +38,30 @@ variables:
   builtinFunctions_Y: (?:Y(?:uleDissimilarity))
   builtinFunctions_Z: (?:Z(?:IPCodeData|Test|Transform|ernikeR|eroSymmetric|eta|etaZero|ipfDistribution))
 
+  internalFunctions_A: (?:A(?:BTiming|ddDelay|llSameAs|llSameBy|ndQ|ppendAt|ppendIterator|ppendToAt|pplyPatternValues|pplyThrough|ReplaceAll|rgumentCount|rrayDepthQ|SCIIQ|ssociatePairs|ssociationDiff|ssociationInvert|ssociationPairs|ssociationSelect|ssociationTranspose|tomicMissing|ttachDebugInfo|ttachEcho|ttachEchoHold|ttachEchoSet|utoloadEvent))
+  internalFunctions_B: (?:B(?:agContents|agInsert|agPush|enchmark|enchmarkPlot|lockProtected|reakpoint|uzz|ytePlot))
+  internalFunctions_C: (?:C(?:acheTo|allEvent|allGraph|allGraphPlot|allGrid|allReturnEvent|allRules|allTimings|atchAll|atchFailure|atchFailureAndMessage|atchFailureAsMessage|atenateAt|hecked|learBenchmarkTimingCaches|learExpressionStore|learPacletExportedSymbols|learPacletLoadCache|loseIterator|odeForm|odePrint|ollectFrames|ollectTo|olorArrayForm|ommaForm|ommaString|ommonSequencesSimilarity|ompiledFunctionInformation|omposeUntil|ompressToByteArray|omputeWithProgress|ond|onditionalBody|onstantAssociation|onstantIterator|ontainsQ|opyPrettyFormToClipboard|opyPreviousCellPrettyFormToClipboard|reateTimer))
+  internalFunctions_D: (?:D(?:eclareArgumentCount|eclareSymbolicHead|eepCases|eepUniqueCases|efineAlias|efineCustomBoxes|efineLiteralMacro|efineMacro|efinitionCases|efinitionContextCases|efinitionData|efinitionDiff|efinitionLocationForm|efinitions|elegateIterator|eleteNone|isableEcho|iscard|iscardStrings|oWhile|ownValuesAssociation|urationString))
+  internalFunctions_E: (?:E(?:ach|choEvent|choGroup|choHold|choHoldSet|choHoldTag|choPerformance|choPerformanceRepeated|choRaw|choSequence|choSet|choSymbol|choTag|lementQ|lidedForm|lideExpression|nlargeBounds|nsureDirectory|numerateSourceFiles|quivalentPatternQ|rrorEvent|valMapAt|valuateCached|valuateChecked|valuateStrict|valuationList|valuationPrint|valuationWindow|xcise|xportContextDefinitions|xtendedNames|xtractFileContexts))
+  internalFunctions_F: (?:F(?:ailedQ|ailureString|alseQ|ileCasesIterator|ileLine|ileLines|ileLinesIterator|ileQ|ileString|ilterOptions|indContext|indDeadCode|indDefinition|indDuplicates|indSyntaxErrors|irstMatchIndex|itTimeComplexity|latFunctionQ|latList|latMap|oldEmit|oldEmitRecurse|oldRecurse|ullyCompiledFunctionQ|unctionAttributes))
+  internalFunctions_G: (?:G(?:enerateSymbolInstrumentation|etBeginEvent|etDebug|etEndEvent|etFragment|etInternal|etSourceStack|etUsages|raphicsBounds|raphSinks|raphSources|roupAgainst))
+  internalFunctions_H: (?:H(?:asActualDefinitionsQ|asDefinitionsQ|asUsageStringQ|eadBox|eldFunctionQ|ighPrecisionDoubleString|oldCodeForm|oldCodePrint|oldCompleteMap|oldFunction|oldLength|oldMap|oldPlainForm|oldPrettyForm|oldPrint|oldScan|oldSymbolName|omogenousNArrayVectorQ))
+  internalFunctions_I: (?:I(?:nCatchFailureQ|ndexBy|ndexOf|ndexRules|ndicesOf|nertExpressionQ|nfoEvent|nformationPanel|nfQ|nheritedMessage|nstrumentDefinition|nstrumentedSet|nternalFailure|ntInfQ|ntQ|nvertAssociation|terator|teratorDelegateQ|teratorExhausted|teratorExhaustedQ|teratorGraph))
+  internalFunctions_J: (?:J(?:oinIterator|oinMap|oinMapIterator|oinTo))
+  internalFunctions_K: (?:K(?:eyAddTo|eyAppendTo|eyIncrement|eyJoinTo|eyPrependTo|eysValues|eyUnionTo|eyValueIterator|eyValueScan))
+  internalFunctions_L: (?:L(?:abelling|ayerPlot|istableFunctionQ|istExpressionStore|istIterator|istOfListsQ|ookupOr))
+  internalFunctions_M: (?:M(?:achineArrayDimensions|achineArrayQ|achineArrayRank|achineIntegerArrayQ|achineQ|acroEvaluate|acroExpand|acroExpandList|acroPanic|acroRules|akeCodeBoxes|akeEventCell|akeFormattedBoxes|akeInputBoxes|akeOpenerWidgetBoxes|akePlainBoxes|apColumn|apIf|apIterator|apParts|apped|apReplacePart|apSequence|atch|atchIndices|atchValues|emoized|essageEvent|essageQuietedQ|essageStackID|LExport|LImport|oduleConditionWrapper|oduleScope|oduleSymbolQ|onitored|onitoredMap|onitoredScan|onitorStack|oreSpecificPatternQ|oreSpecificRuleOrPatternQ|ultiMapAt))
+  internalFunctions_N: (?:N(?:atIntInfQ|atIntQ|ewIterator|iceButton|otQ|umericArrayForm|umericFunctionQ))
+  internalFunctions_O: (?:O(?:nExit|nFailure|penDefinition|penStreamQ|rderlessFunctionQ|rQ|wnValueQ|wnValueSymbols))
+  internalFunctions_P: (?:P(?:ackageOpen|acletCacheDir|acletExportedSymbols|acletLoadCached|airQ|anic|arentContext|arseMethod|artitionBy|arts|artsLevel|atternAppend|atternHead|atternOrder|atternSort|atternSymbols|atternValue|atternValues|ivot|lainForm|osetSort|osIntInfQ|osIntQ|ositiveSIString|ossibleDefinitionLocations|ossibleFunctionQ|ossibleSideEffects|ossibleSideEffectsQ|refixQ|rependIterator|resentQ|rettyForm|rettyFormBoxes|rettyGrid|rintCalls|rintDefinitionCases|rintDefinitions|rintDefinitionsLocal|rintFormattedCode|rintNonhyperlinkedDefinitions|rintStack|rintUsages|rivateSymbolNameQ|rivateSymbolQ|rogressPanel|ropertyAssociation|rotectedFunctionQ|ythonBytes))
+  internalFunctions_Q: (?:Q(?:ualifiedSymbolName|uoted|uotedString|uotedStringForm|uotedStringQ|uotedStringRow))
+  internalFunctions_R: (?:R(?:aggedDimensions|angeIterator|ealDigitsString|eapBag|eapList|efactorDownValuesToMatch|eissueMessage|esetTimings|eturnEvent|eturnFailed|eturnFailure|eturnOnFailure|eturnTaggedFailure|ewriteNotebookIOLabels|MSEnergy|ollbackEvent|ootContext|uleLikeQ|uleLikeVectorQ|uleOrPatternOrder|uleQ|uleVectorQ))
+  internalFunctions_S: (?:S(?:afeConstruct|afeDrop|afeEvaluate|afeFirst|afeLast|afeMost|afePart|afeRest|afeStringDrop|afeStringTake|afeTake|afeToExpression|ameByQ|aveContextDefinitions|aveSymbolDefinitions|canIndexed|canParts|canThread|cope|copeVariable|earch|earchMaximum|electDiscard|electFirstIndex|electIndices|electIterator|electStrings|eq|etAutomatic|etDelayedEvent|etEvent|etFailureSymbol|etHoldAll|etHoldAllComplete|etHoldFirst|etHoldRest|etListable|etMissing|etNoAutorun|etNone|etPatternValue|etRelatedSymbolGroup|etupTeardown|etUsage|IBytesString|ideEffectSymbolQ|implePluralize|impleTemplate|ingletonIterator|keletonizeHeavyData|lice|oftPanic|ourceAnnotation|ourceStackData|owBag|peculativeScope|taticCallGraph|taticCallGraphPlot|treamApply|treamExecute|treamExecuteWithMessage|treamIterator|trictSlice|tringCompress|tringGrid|tringHighlight|tringHighlightPart|tringMatch|tringPatternQ|tringUncompress|ubstituteOwnValueSymbols|wap|ymbolCases|ymbolicHeadQ|ymbolMessageNames|ymbolNameBaseContext|ymbolNameContext|ymbolNameName|ystemSymbolQ))
+  internalFunctions_T: (?:T(?:akeIterator|ap|appedFunction|ee|emporaryInformation|erminatorIterator|estAssoc|estSetsEqual|estSubsetQ|estTable|hen|hreadTableColumn|hrowFailure|hrowOnFailure|hrowRawFailure|ightLabeled|imed|imeLabel|imeString|imingRatio|imingRatioTable|oAssociations|oCamelCase|oCompactLinearSyntax|oDefiniteArticle|oFailure|oIterator|oMessage|oPrettyString|oQuoted|oRegularExpression|oTaggedFailure|oTitleCase|raceLoading|raceUnpacking|ransposeIterator|ransposeTo|rimLeft|rimRight))
+  internalFunctions_U: (?:U(?:ncompressFromByteArray|ndocumentedPackageSymbols|nionTo|niqueCases|nivariateDistributionQ|nmatchedCase|npackAssociation|npackOptions|nprotectAndClearAll|pdatePacletWithProgress|seMacros))
+  internalFunctions_V: (?:V(?:alidFailureQ|alidGraphicsQ|alidPartSpecQ|alidPropertyQ))
+  internalFunctions_W: (?:W(?:arningEvent|hen|henNot|hitespaceQ|ithAutoloadHandler|ithEventHandler|ithGetHandler|ithMessageHandler|ithSetDelayedHandler|ithSetHandler))
+
   options_A: (?:A(?:cceptanceThreshold|ccuracyGoal|ctiveStyle|ddOnHelpPath|djustmentBoxOptions|lignment|lignmentPoint|llowGroupClose|llowInlineCells|llowLooseGrammar|llowReverseGroupClose|llowScriptLevelChange|llowVersionUpdate|llowedCloudExtraParameters|llowedCloudParameterExtensions|llowedDimensions|llowedFrequencyRange|llowedHeads|lternativeHypothesis|ltitudeMethod|mbiguityFunction|natomySkinStyle|nchoredSearch|nimationDirection|nimationRate|nimationRepetitions|nimationRunTime|nimationRunning|nimationTimeIndex|nnotationRules|ntialiasing|ppearance|ppearanceElements|ppearanceRules|spectRatio|ssociationFormat|ssumptions|synchronous|ttachedCell|udioChannelAssignment|udioEncoding|udioInputDevice|udioLabel|udioOutputDevice|uthentication|utoAction|utoCopy|utoDelete|utoGeneratedPackage|utoIndent|utoItalicWords|utoMultiplicationSymbol|utoOpenNotebooks|utoOpenPalettes|utoOperatorRenderings|utoRemove|utoScroll|utoSpacing|utoloadPath|utorunSequencing|xes|xesEdge|xesLabel|xesOrigin|xesStyle))
   options_B: (?:B(?:ackground|arOrigin|arSpacing|aseStyle|aselinePosition|inaryFormat|ookmarks|ooleanStrings|oundaryStyle|oxBaselineShift|oxFormFormatTypes|oxFrame|oxMargins|oxRatios|oxStyle|oxed|ubbleScale|ubbleSizes|uttonBoxOptions|uttonData|uttonFunction|uttonMinHeight|uttonSource|yteOrdering))
   options_C: (?:C(?:alendarType|alloutMarker|alloutStyle|aptureRunning|aseOrdering|elestialSystem|ellAutoOverwrite|ellBaseline|ellBracketOptions|ellChangeTimes|ellContext|ellDingbat|ellDingbatMargin|ellDynamicExpression|ellEditDuplicate|ellEpilog|ellEvaluationDuplicate|ellEvaluationFunction|ellEventActions|ellFrame|ellFrameColor|ellFrameLabelMargins|ellFrameLabels|ellFrameMargins|ellGrouping|ellGroupingRules|ellHorizontalScrolling|ellID|ellLabel|ellLabelAutoDelete|ellLabelMargins|ellLabelPositioning|ellLabelStyle|ellLabelTemplate|ellMargins|ellOpen|ellProlog|ellSize|ellTags|haracterEncoding|haracterEncodingsPath|hartBaseStyle|hartElementFunction|hartElements|hartLabels|hartLayout|hartLegends|hartStyle|lassPriors|lickToCopyEnabled|lipPlanes|lipPlanesStyle|lipRange|lippingStyle|losingAutoSave|loudBase|loudObjectNameFormat|loudObjectURLType|lusterDissimilarityFunction|odeAssistOptions|olorCoverage|olorFunction|olorFunctionBinning|olorFunctionScaling|olorRules|olorSelectorSettings|olorSpace|olumnAlignments|olumnLines|olumnSpacings|olumnWidths|olumnsEqual|ombinerFunction|ommonDefaultFormatTypes|ommunityBoundaryStyle|ommunityLabels|ommunityRegionStyle|ompilationOptions|ompilationTarget|ompiled|omplexityFunction|ompressionLevel|onfidenceLevel|onfidenceRange|onfidenceTransform|onfigurationPath|onstants|ontentPadding|ontentSelectable|ontentSize|ontinuousAction|ontourLabels|ontourShading|ontourStyle|ontours|ontrolPlacement|ontrolType|ontrollerLinking|ontrollerMethod|ontrollerPath|ontrolsRendering|onversionRules|ookieFunction|oordinatesToolOptions|opyFunction|opyable|ornerNeighbors|ounterAssignments|ounterFunction|ounterIncrements|ounterStyleMenuListing|ovarianceEstimatorFunction|reateCellID|reateIntermediateDirectories|riterionFunction|ubics|urveClosed))
@@ -965,6 +989,54 @@ contexts:
       scope: symbol.unrecognized.wolfram
     - match: '`'
       scope: invalid.illegal.wolfram
+
+    - match: '{{internalFunctions_A}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_B}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_C}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_D}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_E}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_F}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_G}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_H}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_I}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_J}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_K}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_L}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_M}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_N}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_O}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_P}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_Q}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_R}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_S}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_T}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_U}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_V}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+    - match: '{{internalFunctions_W}}{{symbolEndBoundary}}'
+      scope: support.function.builtin.wolfram
+
     - match: '{{builtinFunctions_A}}{{symbolEndBoundary}}'
       scope: support.function.builtin.wolfram
     - match: '{{builtinFunctions_B}}{{symbolEndBoundary}}'
