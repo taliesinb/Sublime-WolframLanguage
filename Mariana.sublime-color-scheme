@@ -1,0 +1,77 @@
+// Documentation at https://www.sublimetext.com/docs/color_schemes.html
+{
+	"variables":
+	{
+		"blue7": "hsl(210, 40%, 69%)",
+		"pink2": "hsl(300, 30%, 68%)",
+		"blueDim": "hsl(210, 30%, 75%)",
+		"whiteDim": "hsl(210, 20%, 70%)",
+		"orangeDim": "hsl(40, 20%, 68%)",
+	},
+	"globals":
+	{
+	},
+	"rules":
+	[
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "foreground": "var(blue7)"
+        },
+		{
+            "name": "Scoping function",
+            "scope": "support.function.scoping",
+            "foreground": "var(pink)",
+            "font_style": ""
+        },
+		{
+            "name": "User function",
+            "scope": "variable.function",
+            "foreground": "var(blue)",
+            "font_style": "bold"
+        },
+		{
+            "name": "User variable",
+            "scope": "symbol.unrecognized",
+            "foreground": "var(blue)",
+            "font_style": ""
+        },
+		{
+            "name": "QG function",
+            "scope": "support.function.qg",
+            "foreground": "var(blue5)",
+            "font_style": ""
+        },
+		{
+            "name": "System function",
+            "scope": "support.function.builtin",
+            "foreground": "var(blueDim)",
+            "font_style": ""
+        },
+		{
+            "name": "System return",
+            "scope": "support.function.nonlocal",
+            "foreground": "var(red2)",
+            "font_style": ""
+        },
+        {
+            "name": "System constant",
+            "scope": "constant.language",
+            "foreground": "var(blueDim)",
+            "font_style": "italic"
+        },
+		{
+            "name": "User function definition head",
+            "scope": "entity.name.function",
+            "foreground": "var(white3)",
+            "font_style": "bold"
+        },
+		{
+            "name": "Package definition",
+            "scope": "meta.package.wolfram",
+            "foreground": "var(black)",
+            "background": "var(pink)",
+            "font_style": "bold"
+        },
+	]
+}
