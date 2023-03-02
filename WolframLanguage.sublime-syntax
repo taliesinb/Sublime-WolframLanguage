@@ -362,10 +362,10 @@ variables:
   badSymbols_U: (?:U(?:nSameQ|rlExecute))
   badSymbols_DOLLAR: (?:\$(?:PathNameSeparator|RegisteredUsername))
 
-  sessionSymbols_E: (?:E(?:cho|xit))
+  sessionSymbols_E: (?:E(?:cho|choIF|choHold|xit|choCase))
   sessionSymbols_I: (?:I(?:n|nString))
   sessionSymbols_O: (?:O(?:ut))
-  sessionSymbols_P: (?:P(?:rint))
+  sessionSymbols_P: (?:P(?:rint|rintIF))
   sessionSymbols_Q: (?:Q(?:uit))
   sessionSymbols_DOLLAR: (?:\$(?:HistoryLength|Line|Post|Pre|PrePrint|PreRead|SyntaxHandler))
 
