@@ -578,6 +578,7 @@ contexts:
 
   literals:
     - include: numbers
+    - include: raw_strings
     - include: strings
 
   numbers:
@@ -667,6 +668,17 @@ contexts:
       scope: invalid.illegal
     - match: '{{decimal}}'
       scope: constant.numeric.wolfram
+
+  raw_strings:
+    - match: \"\"\"
+      scope: punctuation.definition.rawstring.begin
+      push:
+        - meta_scope: string.quoted.triple.wolfram
+        - meta_include_prototype: false
+        - match: \"\"\"
+          scope: punctuation.definition.string.end
+          pop: true
+        - match: .
 
   strings:
     - match: \"
