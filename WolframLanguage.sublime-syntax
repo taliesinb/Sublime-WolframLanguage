@@ -407,6 +407,10 @@ contexts:
       captures:
         1: meta.function.wolfram entity.name.Context.wolfram
         2: meta.function.wolfram entity.name.function.wolfram
+    - match: ^\s*(`?(?:{{symbolSegment}}`)*)({{symbolSegment}})(?=\s*(?:/;.*)?(?::=|=) (?:Case))
+      captures:
+        1: meta.function.wolfram entity.name.Context.wolfram
+        2: meta.function.wolfram entity.name.function.wolfram
     - match: ^\s*(`?(?:{{symbolSegment}}`)*)({{symbolSegment}})(?=\s*(?:/;.*)?(?::=|=(?!!|=|\.)))
       captures:
         1: meta.function.wolfram entity.name.Context.wolfram
