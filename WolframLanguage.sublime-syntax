@@ -723,6 +723,10 @@ contexts:
       scope: keyword.operator.assignment.UpSetDelayed.wolfram
     - match: (?:\^:)
       scope: invalid.illegal
+    - match: (?:'=)
+      scope: invalid.printing
+    - match: (?:')
+      scope: invalid.printing
     - match: (?:===)
       scope: keyword.operator.SameQ.wolfram
     - match: (?:=!=|\.\.\.|//\.|@@@|<->|//@)
