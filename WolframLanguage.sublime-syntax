@@ -1717,6 +1717,8 @@ contexts:
       scope: invalid.session.wolfram
     - match: '{{symbolSegment}}(?=\s*(\[(?!\s*\[)|@(?!@)))'
       scope: variable.function.wolfram
+    - match: '[$]{{symbolSegment}}'
+      scope: entity.name.constant.wolfram
     - match: '{{symbolSegment}}'
       scope: symbol.unrecognized.wolfram
 
