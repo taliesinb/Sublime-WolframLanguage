@@ -42,7 +42,7 @@ variables:
   internalFunctions_B: (?:B(?:agContents|agInsert|agPush|enchmark|enchmarkPlot|lockProtected|reakpoint|uzz|ytePlot))
   internalFunctions_C: (?:C(?:acheTo|allEvent|allGraph|allGraphPlot|allGrid|allReturnEvent|allRules|allTimings|atchAll|atchFailure|atchFailureAndMessage|atchFailureAsMessage|atenateAt|hecked|learBenchmarkTimingCaches|learExpressionStore|learPacletExportedSymbols|learPacletLoadCache|loseIterator|odeForm|odePrint|ollectFrames|ollectTo|olorArrayForm|ommaForm|ommaString|ommonSequencesSimilarity|ompiledFunctionInformation|omposeUntil|ompressToByteArray|omputeWithProgress|ond|onditionalBody|onstantAssociation|onstantIterator|ontainsQ|opyPrettyFormToClipboard|opyPreviousCellPrettyFormToClipboard|reateTimer))
   internalFunctions_D: (?:D(?:eclareArgumentCount|eclareSymbolicHead|eepCases|eepUniqueCases|efineAlias|efineCustomBoxes|efineLiteralMacro|efineMacro|efinitionCases|efinitionContextCases|efinitionData|efinitionDiff|efinitionLocationForm|efinitions|elegateIterator|eleteNone|isableEcho|iscard|iscardStrings|oWhile|ownValuesAssociation|urationString))
-  internalFunctions_E: (?:E(?:ach|choEvent|choGroup|choHold|choHoldSet|choHoldTag|choPerformance|choPerformanceRepeated|choRaw|choSequence|choSet|choSymbol|choTag|lementQ|lidedForm|lideExpression|nlargeBounds|nsureDirectory|numerateSourceFiles|quivalentPatternQ|rrorEvent|valMapAt|valuateCached|valuateChecked|valuateStrict|valuationList|valuationPrint|valuationWindow|xcise|xportContextDefinitions|xtendedNames|xtractFileContexts))
+  internalFunctions_E: (?:E(?:ach|choEvent|choGroup|choHoldSet|choHoldTag|choPerformance|choPerformanceRepeated|choRaw|choSequence|choSet|choSymbol|choTag|lementQ|lidedForm|lideExpression|nlargeBounds|nsureDirectory|numerateSourceFiles|quivalentPatternQ|rrorEvent|valMapAt|valuateCached|valuateChecked|valuateStrict|valuationList|valuationPrint|valuationWindow|xcise|xportContextDefinitions|xtendedNames|xtractFileContexts))
   internalFunctions_F: (?:F(?:ailedQ|ailureString|alseQ|ileCasesIterator|ileLine|ileLines|ileLinesIterator|ileQ|ileString|ilterOptions|indContext|indDeadCode|indDefinition|indDuplicates|indSyntaxErrors|irstMatchIndex|itTimeComplexity|latFunctionQ|latList|latMap|oldEmit|oldEmitRecurse|oldRecurse|ullyCompiledFunctionQ|unctionAttributes))
   internalFunctions_G: (?:G(?:enerateSymbolInstrumentation|etBeginEvent|etDebug|etEndEvent|etFragment|etInternal|etSourceStack|etUsages|raphicsBounds|raphSinks|raphSources|roupAgainst))
   internalFunctions_H: (?:H(?:asActualDefinitionsQ|asDefinitionsQ|asUsageStringQ|eadBox|eldFunctionQ|ighPrecisionDoubleString|oldCodeForm|oldCodePrint|oldCompleteMap|oldFunction|oldLength|oldMap|oldPlainForm|oldPrettyForm|oldPrint|oldScan|oldSymbolName|omogenousNArrayVectorQ))
@@ -57,7 +57,7 @@ variables:
   internalFunctions_Q: (?:Q(?:ualifiedSymbolName|uoted|uotedString|uotedStringForm|uotedStringQ|uotedStringRow))
   internalFunctions_R: (?:R(?:aggedDimensions|angeIterator|ealDigitsString|eapBag|eapList|efactorDownValuesToMatch|eissueMessage|esetTimings|eturnEvent|eturnFailed|eturnFailure|eturnOnFailure|eturnTaggedFailure|ewriteNotebookIOLabels|MSEnergy|ollbackEvent|ootContext|uleLikeQ|uleLikeVectorQ|uleOrPatternOrder|uleQ|uleVectorQ))
   internalFunctions_S: (?:S(?:afeConstruct|afeDrop|afeEvaluate|afeFirst|afeLast|afeMost|afePart|afeRest|afeStringDrop|afeStringTake|afeTake|afeToExpression|ameByQ|aveContextDefinitions|aveSymbolDefinitions|canIndexed|canParts|canThread|cope|copeVariable|earch|earchMaximum|electDiscard|electFirstIndex|electIndices|electIterator|electStrings|eq|etAutomatic|etDelayedEvent|etEvent|etFailureSymbol|etHoldAll|etHoldAllComplete|etHoldFirst|etHoldRest|etListable|etMissing|etNoAutorun|etNone|etPatternValue|etRelatedSymbolGroup|etupTeardown|etUsage|IBytesString|ideEffectSymbolQ|implePluralize|impleTemplate|ingletonIterator|keletonizeHeavyData|lice|oftPanic|ourceAnnotation|ourceStackData|owBag|peculativeScope|taticCallGraph|taticCallGraphPlot|treamApply|treamExecute|treamExecuteWithMessage|treamIterator|trictSlice|tringCompress|tringGrid|tringHighlight|tringHighlightPart|tringMatch|tringPatternQ|tringUncompress|ubstituteOwnValueSymbols|wap|ymbolCases|ymbolicHeadQ|ymbolMessageNames|ymbolNameBaseContext|ymbolNameContext|ymbolNameName|ystemSymbolQ))
-  internalFunctions_T: (?:T(?:akeIterator|ap|appedFunction|ee|emporaryInformation|erminatorIterator|estAssoc|estSetsEqual|estSubsetQ|estTable|hen|hreadTableColumn|hrowFailure|hrowOnFailure|hrowRawFailure|ightLabeled|imed|imeLabel|imeString|imingRatio|imingRatioTable|oAssociations|oCamelCase|oCompactLinearSyntax|oDefiniteArticle|oFailure|oIterator|oMessage|oPrettyString|oQuoted|oRegularExpression|oTaggedFailure|oTitleCase|raceLoading|raceUnpacking|ransposeIterator|ransposeTo|rimLeft|rimRight))
+  internalFunctions_T: (?:T(?:akeIterator|appedFunction|ee|emporaryInformation|erminatorIterator|estAssoc|estSetsEqual|estSubsetQ|estTable|hen|hreadTableColumn|hrowFailure|hrowOnFailure|hrowRawFailure|ightLabeled|imed|imeLabel|imeString|imingRatio|imingRatioTable|oAssociations|oCamelCase|oCompactLinearSyntax|oDefiniteArticle|oFailure|oIterator|oMessage|oPrettyString|oQuoted|oRegularExpression|oTaggedFailure|oTitleCase|raceLoading|raceUnpacking|ransposeIterator|ransposeTo|rimLeft|rimRight))
   internalFunctions_U: (?:U(?:ncompressFromByteArray|ndocumentedPackageSymbols|nionTo|niqueCases|nivariateDistributionQ|nmatchedCase|npackAssociation|npackOptions|nprotectAndClearAll|pdatePacletWithProgress|seMacros))
   internalFunctions_V: (?:V(?:alidFailureQ|alidGraphicsQ|alidPartSpecQ|alidPropertyQ))
   internalFunctions_W: (?:W(?:arningEvent|hen|henNot|hitespaceQ|ithAutoloadHandler|ithEventHandler|ithGetHandler|ithMessageHandler|ithSetDelayedHandler|ithSetHandler))
@@ -173,8 +173,9 @@ variables:
   qgOptionSymbols_N: (?:N(?:egationStyle))
 
   scopingFunctions: (?:With|Block|Module|Case|Scope)
-  nonlocalFunctions: (?:Return|ReturnFailed|ReturnMessage|ThrowMessage|CatchMessage|Throw|Catch)
+  nonlocalFunctions: (?:BadArguments|Return|ReturnFailed|ReturnMessage|ThrowMessage|CatchMessage|Throw|Catch)
   packageFunctions: (?:(?:System|Public|Private)(?:Macro|Variable|Function|ScopedOption|Option|Head|Symbol|Form|Object|FormBox))
+  packageItemTypes: (?:Macro|Variable|Function|ScopedOption|Option|Head|Symbol|Form|Object|FormBox)
 
   options_A: (?:A(?:cceptanceThreshold|ccuracyGoal|ctiveStyle|ddOnHelpPath|djustmentBoxOptions|lignment|lignmentPoint|llowGroupClose|llowInlineCells|llowLooseGrammar|llowReverseGroupClose|llowScriptLevelChange|llowVersionUpdate|llowedCloudExtraParameters|llowedCloudParameterExtensions|llowedDimensions|llowedFrequencyRange|llowedHeads|lternativeHypothesis|ltitudeMethod|mbiguityFunction|natomySkinStyle|nchoredSearch|nimationDirection|nimationRate|nimationRepetitions|nimationRunTime|nimationRunning|nimationTimeIndex|nnotationRules|ntialiasing|ppearance|ppearanceElements|ppearanceRules|spectRatio|ssociationFormat|ssumptions|synchronous|ttachedCell|udioChannelAssignment|udioEncoding|udioInputDevice|udioLabel|udioOutputDevice|uthentication|utoAction|utoCopy|utoDelete|utoGeneratedPackage|utoIndent|utoItalicWords|utoMultiplicationSymbol|utoOpenNotebooks|utoOpenPalettes|utoOperatorRenderings|utoRemove|utoScroll|utoSpacing|utoloadPath|utorunSequencing|xes|xesEdge|xesLabel|xesOrigin|xesStyle))
   options_B: (?:B(?:ackground|arOrigin|arSpacing|aseStyle|aselinePosition|inaryFormat|ookmarks|ooleanStrings|oundaryStyle|oxBaselineShift|oxFormFormatTypes|oxFrame|oxMargins|oxRatios|oxStyle|oxed|ubbleScale|ubbleSizes|uttonBoxOptions|uttonData|uttonFunction|uttonMinHeight|uttonSource|yteOrdering))
@@ -367,6 +368,7 @@ variables:
   sessionSymbols_O: (?:O(?:ut))
   sessionSymbols_P: (?:P(?:rint|rintIF))
   sessionSymbols_Q: (?:Q(?:uit))
+  sessionSymbols_T: (?:T(?:ap))
   sessionSymbols_DOLLAR: (?:\$(?:HistoryLength|Line|Post|Pre|PrePrint|PreRead|SyntaxHandler))
 
   punctuationChar: (?:!|&|'|\*|\+|,|-|\.|/|:|;|<|=|>|\?|@|\\|\^|\||~)
@@ -382,6 +384,7 @@ contexts:
 
   main:
     - include: shebang
+    - include: package_items
     - include: simple_toplevel_definitions
     - include: expressions
 
@@ -415,6 +418,25 @@ contexts:
       captures:
         1: meta.function.wolfram entity.name.Context.wolfram
         2: meta.function.wolfram entity.name.constant.wolfram
+
+  package_items:
+    - match: 'P(?:ublic|rivate){{packageItemTypes}}\['
+      scope: meta.package.wolfram
+      push: package_items_block
+    - match: 'System{{packageItemTypes}}\['
+      scope: meta.package.wolfram
+      push: package_items_block
+
+  package_items_block:
+    - meta_scope: meta.package.wolfram
+    - match: ']'
+      pop: true
+    - match: ','
+    - match: '({{symbolSegment}})[, \n\t]*'
+      captures:
+        1: entity.name.function.package_item.wolfram
+    - match: '.'
+      scope: invalid.illegal
 
   expressions:
     - include: escaped_character_symbols
@@ -1107,6 +1129,8 @@ contexts:
       scope: invalid.session.wolfram
     - match: System`{{sessionSymbols_Q}}{{symbolEndBoundary}}
       scope: invalid.session.wolfram
+    - match: System`{{sessionSymbols_T}}{{symbolEndBoundary}}
+      scope: invalid.session.wolfram
     - match: System`{{sessionSymbols_DOLLAR}}{{symbolEndBoundary}}
       scope: invalid.session.wolfram
     - match: System`{{symbolSegment}}{{symbolEndBoundary}}
@@ -1126,9 +1150,6 @@ contexts:
 
     - match: '{{scopingFunctions}}{{symbolEndBoundary}}'
       scope: support.function.scoping.wolfram
-
-    - match: '{{packageFunctions}}\[(?:[^]]+?)\]'
-      scope: meta.package.wolfram
 
     - match: '{{nonlocalFunctions}}{{symbolEndBoundary}}'
       scope: support.function.nonlocal.wolfram
@@ -1712,6 +1733,8 @@ contexts:
     - match: '{{sessionSymbols_P}}{{symbolEndBoundary}}'
       scope: invalid.session.wolfram
     - match: '{{sessionSymbols_Q}}{{symbolEndBoundary}}'
+      scope: invalid.session.wolfram
+    - match: '{{sessionSymbols_T}}{{symbolEndBoundary}}'
       scope: invalid.session.wolfram
     - match: '{{sessionSymbols_DOLLAR}}{{symbolEndBoundary}}'
       scope: invalid.session.wolfram
