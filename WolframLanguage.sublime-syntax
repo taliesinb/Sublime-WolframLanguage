@@ -248,7 +248,7 @@ variables:
   obsoleteSymbols_M: (?:M(?:eshRange|oleculeEquivalentQ))
   obsoleteSymbols_N: (?:N(?:etInformation|etSharedArray|extScheduledTaskTime|otebookCreate))
   obsoleteSymbols_O: (?:O(?:penTemporary))
-  obsoleteSymbols_P: (?:P(?:IDData|ackingMethod|ersistentValue|ixelConstrained|lot3Matrix|lotDivision|lotJoined|olygonIntersections|redictorInformation|roperties|roperty|ropertyList|ropertyValue))
+  obsoleteSymbols_P: (?:P(?:IDData|ackingMethod|ersistentValue|lot3Matrix|lotDivision|lotJoined|olygonIntersections|redictorInformation|roperties|roperty|ropertyList|ropertyValue))
   obsoleteSymbols_R: (?:R(?:andom|asterArray|ecognitionThreshold|elease|emoteKernelObject|emoveAsynchronousTask|emoveProperty|emoveScheduledTask|enderAll|eplaceHeldPart|esetScheduledTask|esumePacket|unScheduledTask))
   obsoleteSymbols_S: (?:S(?:cheduledTaskActiveQ|cheduledTaskInformation|cheduledTaskObject|cheduledTasks|creenRectangle|electionAnimate|equenceAttentionLayer|equenceForm|etProperty|hading|hortestMatch|ingularValues|kinStyle|ocialMediaData|tartAsynchronousTask|tartScheduledTask|tateDimensions|topAsynchronousTask|topScheduledTask|tructuredArray|tyleForm|tylePrint|ubscripted|urfaceColor|urfaceGraphics|uspendPacket|ystemModelProgressReporting))
   obsoleteSymbols_T: (?:T(?:eXSave|extStyle|imeWarpingCorrespondence|imeWarpingDistance|oDate|oFileName|oHeldExpression))
@@ -365,7 +365,7 @@ variables:
   badSymbols_U: (?:U(?:nSameQ|rlExecute))
   badSymbols_DOLLAR: (?:\$(?:PathNameSeparator|RegisteredUsername))
 
-  sessionSymbols_E: (?:E(?:cho|choIF|choHold|xit|choCase))
+  sessionSymbols_E: (?:E(?:cho|choIF|choHold|xit|choCase|choScope))
   sessionSymbols_I: (?:I(?:n|nString))
   sessionSymbols_O: (?:O(?:ut))
   sessionSymbols_P: (?:P(?:rint|rintIF))
