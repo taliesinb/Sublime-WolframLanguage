@@ -2,7 +2,7 @@
   //
   // Enables the Wolfram language server
   //
-  "lsp_server_enabled": true,
+  "lsp_server_enabled": false,
 
   //
   // Enables the timeout warning if the kernel does not start after 15 seconds
