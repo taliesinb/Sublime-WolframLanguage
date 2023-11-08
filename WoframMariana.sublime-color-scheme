@@ -400,10 +400,17 @@
             "scope": "variable.function, variable.annotation",
             "foreground": "var(blue)"
         },
+
         {
-            "name": "Library function",
-            "scope": "support.function, support.macro",
+            "name": "Variable",
+            "scope": "support.function.variable",
             "foreground": "var(blue)",
+            "font_style": "italic"
+        },
+        {
+            "name": "Macro",
+            "scope": "support.function.macro",
+            "foreground": "var(teal)",
             "font_style": "italic"
         },
         {

@@ -162,7 +162,7 @@ contexts:
         1: meta.function.wolfram entity.name.constant.wolfram variable.local.wolfram
 
   package_items:
-    - match: '(?:{{Package_P}}|{{Package_S}})\['
+    - match: '(?:{{Package_P}}|{{Package_S}}|{{Package_C}})\['
       scope: meta.package.wolfram
       push: package_items_block
 
@@ -649,7 +649,7 @@ $SYMBOLS$
     - match: '[A-Z]{{symbolSegment}}'
       scope: variable.local.unrecognized.wolfram
 
-    - match: '{{symbolSegment}}[:_]'
+    - match: '{{symbolSegment}}(?=[:_])'
       scope: variable.local.pattern.wolfram
 
     - match: '{{symbolSegment}}'
