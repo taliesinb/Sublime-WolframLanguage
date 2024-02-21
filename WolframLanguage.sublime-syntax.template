@@ -550,6 +550,8 @@ contexts:
       scope: keyword.operator.BangBang.wolfram
     - match: (?:\?\?)
       scope: invalid.illegal.Information.wolfram
+    - match: (?:<=>)
+      scope: keyword.operator.wolfram
     - match: (?:<=|>=|\.\.|:>|<>|->|/@|/;|/\.|//|/\*|@@|@\*|~~|\*\*)
       scope: keyword.operator.wolfram
     - match: (?:-|\+|/|\*)
@@ -646,11 +648,11 @@ $SYMBOLS$
     - match: '[$]{{symbolSegment}}'
       scope: variable.global.wolfram
 
-    - match: '[A-Z]{{symbolSegment}}'
-      scope: variable.local.unrecognized.wolfram
-
     - match: '{{symbolSegment}}(?=[:_])'
       scope: variable.local.pattern.wolfram
+
+    - match: '[A-Z]{{symbolSegment}}'
+      scope: variable.local.unrecognized.wolfram
 
     - match: '{{symbolSegment}}'
       scope: variable.local.wolfram
