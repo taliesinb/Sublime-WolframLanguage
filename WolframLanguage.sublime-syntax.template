@@ -648,7 +648,7 @@ $SYMBOLS$
     - match: '[$]{{symbolSegment}}'
       scope: variable.global.wolfram
 
-    - match: '{{symbolSegment}}(?=[:_])'
+    - match: '{{symbolSegment}}(?=_|:[^:])'
       scope: variable.local.pattern.wolfram
 
     - match: '[A-Z]{{symbolSegment}}'

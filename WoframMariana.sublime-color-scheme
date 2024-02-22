@@ -55,9 +55,15 @@
         "typesetting": "hsl(50, 35%, 70%)",
         "graphics": "hsl(10, 35%, 70%)",
         "special": "var(red2)",
+        "ioFunction": "color(var(plain) blend(var(red2) 50%))",
+
+        "cache": "color(var(plain) blend(var(teal) 50%))",
         "head": "hsl(250, 40%, 80%)",
         "slot": "hsl(50, 60%, 60%)",
-        "operator": "var(blue7)"
+        "operator": "var(blue7)",
+
+        "stringPattern": "color(var(plain) blend(var(head) 50%))"
+
     },
     "globals":
     {
@@ -189,6 +195,18 @@
         },
         {
             "name": "TypesettingBoxFunction",
+            "scope": "support.function.io",
+            "foreground": "var(ioFunction)",
+            "font_style": ""
+        },
+        {
+            "name": "TypesettingBoxFunction",
+            "scope": "support.function.string.pattern",
+            "foreground": "var(stringPattern)",
+            "font_style": ""
+        },
+        {
+            "name": "TypesettingBoxFunction",
             "scope": "support.function.typesetting.box.wolfram",
             "foreground": "var(typesetting)",
             "font_style": ""
@@ -262,10 +280,16 @@
             "font_style": ""
         },
         {
-            "name": "SpecialFunction",
+            "name": "SpecialFunctionOrVariable",
             "scope": "support.function.special",
             "foreground": "var(special)",
             "font_style": ""
+        },
+        {
+            "name": "CacheFunctionOrVariable",
+            "scope": "support.function.cache",
+            "foreground": "var(cache)",
+            "font_style": "glow"
         },
         {
             "name": "Symbol",
