@@ -11,7 +11,7 @@ variables:
   symbolSegment: (?:[$[:alpha:]][$[:alnum:]]*)
   symbolEndBoundary: (?![`$[:alnum:]])
 
-$REGEXPS$
+$$$VARIABLES$$$
 
   systemLongNames_F: (?:F(?:ormalA|ormalAlpha|ormalB|ormalBeta|ormalC|ormalCapitalA|ormalCapitalAlpha|ormalCapitalB|ormalCapitalBeta|ormalCapitalC|ormalCapitalChi|ormalCapitalD|ormalCapitalDelta|ormalCapitalDigamma|ormalCapitalE|ormalCapitalEpsilon|ormalCapitalEta|ormalCapitalF|ormalCapitalG|ormalCapitalGamma|ormalCapitalH|ormalCapitalI|ormalCapitalIota|ormalCapitalJ|ormalCapitalK|ormalCapitalKappa|ormalCapitalKoppa|ormalCapitalL|ormalCapitalLambda|ormalCapitalM|ormalCapitalMu|ormalCapitalN|ormalCapitalNu|ormalCapitalO|ormalCapitalOmega|ormalCapitalOmicron|ormalCapitalP|ormalCapitalPhi|ormalCapitalPi|ormalCapitalPsi|ormalCapitalQ|ormalCapitalR|ormalCapitalRho|ormalCapitalS|ormalCapitalSampi|ormalCapitalSigma|ormalCapitalStigma|ormalCapitalT|ormalCapitalTau|ormalCapitalTheta|ormalCapitalU|ormalCapitalUpsilon|ormalCapitalV|ormalCapitalW|ormalCapitalX|ormalCapitalXi|ormalCapitalY|ormalCapitalZ|ormalCapitalZeta|ormalChi|ormalCurlyCapitalUpsilon|ormalCurlyEpsilon|ormalCurlyKappa|ormalCurlyPhi|ormalCurlyPi|ormalCurlyRho|ormalCurlyTheta|ormalD|ormalDelta|ormalDigamma|ormalE|ormalEpsilon|ormalEta|ormalF|ormalFinalSigma|ormalG|ormalGamma|ormalH|ormalI|ormalIota|ormalJ|ormalK|ormalKappa|ormalKoppa|ormalL|ormalLambda|ormalM|ormalMu|ormalN|ormalNu|ormalO|ormalOmega|ormalOmicron|ormalP|ormalPhi|ormalPi|ormalPsi|ormalQ|ormalR|ormalRho|ormalS|ormalSampi|ormalScriptA|ormalScriptB|ormalScriptC|ormalScriptCapitalA|ormalScriptCapitalB|ormalScriptCapitalC|ormalScriptCapitalD|ormalScriptCapitalE|ormalScriptCapitalF|ormalScriptCapitalG|ormalScriptCapitalH|ormalScriptCapitalI|ormalScriptCapitalJ|ormalScriptCapitalK|ormalScriptCapitalL|ormalScriptCapitalM|ormalScriptCapitalN|ormalScriptCapitalO|ormalScriptCapitalP|ormalScriptCapitalQ|ormalScriptCapitalR|ormalScriptCapitalS|ormalScriptCapitalT|ormalScriptCapitalU|ormalScriptCapitalV|ormalScriptCapitalW|ormalScriptCapitalX|ormalScriptCapitalY|ormalScriptCapitalZ|ormalScriptD|ormalScriptE|ormalScriptF|ormalScriptG|ormalScriptH|ormalScriptI|ormalScriptJ|ormalScriptK|ormalScriptL|ormalScriptM|ormalScriptN|ormalScriptO|ormalScriptP|ormalScriptQ|ormalScriptR|ormalScriptS|ormalScriptT|ormalScriptU|ormalScriptV|ormalScriptW|ormalScriptX|ormalScriptY|ormalScriptZ|ormalSigma|ormalStigma|ormalT|ormalTau|ormalTheta|ormalU|ormalUpsilon|ormalV|ormalW|ormalX|ormalXi|ormalY|ormalZ|ormalZeta))
   systemLongNames_S: (?:S(?:ystemsModelDelay))
@@ -127,6 +127,7 @@ contexts:
     - include: shebang
     - include: package_items
     - include: simple_toplevel_definitions
+    - include: metafunction_toplevel_definitions
     - include: expressions
 
   prototype:
@@ -162,7 +163,7 @@ contexts:
         1: meta.function.wolfram entity.name.constant.wolfram variable.local.wolfram
 
   package_items:
-    - match: '(?:{{Package_P}}|{{Package_S}}|{{Package_C}})\['
+    - match: '(?:{{Package}})\['
       scope: meta.package.wolfram
       push: package_items_block
 
@@ -176,6 +177,108 @@ contexts:
         1: entity.name.function.package.item.wolfram
     - match: '.'
       scope: invalid.illegal
+
+  metafunction_toplevel_definitions:
+    - match: '^\s*(?=Define[A-Za-z]+Rules(\[))'
+      push: defining_rules_metafunction_call
+    - match: '^\s*(?=Define[A-Za-z]+(\[))'
+      push: defining_metafunction_call
+    - match: '^\s*(?=Declare[A-Za-z]+(\[))'
+      push: declaring_metafunction_call
+
+  defining_rules_metafunction_call:
+    - match: '({{MetaFunction}})(\[)'
+      captures:
+        1: support.function.meta.wolfram
+        2: punctuation.section.brackets.begin.wolfram
+      push: [end_bracket, defined_symbol_rule_sequence]
+      pop: true
+    - match: '[A-Za-z]+'
+      scope: invalid.inappropriate
+      pop: true
+
+  defining_metafunction_call:
+    - match: '({{MetaFunction}})(\[)'
+      captures:
+        1: support.function.meta.wolfram
+        2: punctuation.section.brackets.begin.wolfram
+      push: [end_bracket, single_expression, comma, defined_symbol_or_list]
+      pop: true
+    - match: '[A-Za-z]+'
+      scope: invalid.inappropriate
+      pop: true
+
+  declaring_metafunction_call:
+    - match: '({{MetaFunction}})(\[)'
+      captures:
+        1: support.function.meta.wolfram
+        2: punctuation.section.brackets.begin.wolfram
+      push: [end_bracket, defined_symbol_sequence]
+      pop: true
+    - match: '[A-Za-z]+'
+      scope: invalid.inappropriate
+      pop: true
+
+  defined_symbol_or_list:
+    - match: '\s+'
+    - match: '\{'
+      push: defined_symbol_sequence
+    - match: '\s*({{symbolSegment}})\s*'
+      scope: entity.name.function.wolfram
+      pop: true
+    - match: ''
+      pop: true
+
+  defined_symbol:
+    - match: '\s*({{symbolSegment}})\s*'
+      scope: entity.name.function.wolfram
+      pop: true
+    - match: ''
+      pop: true
+
+  defined_symbol_rule_sequence:
+    - match: '\s+'
+    - match: '({{symbolSegment}})\s+(->|:>)'
+      captures:
+        1: entity.name.function.wolfram
+        2: keyword.operator.wolfram
+      push: single_expression
+    - match: ','
+      scope: keyword.operator.Comma.wolfram
+    - match: '(?=[}\]])'
+      pop: true
+    - match: '.'
+      scope: invalid.illegal
+
+  defined_symbol_sequence:
+    - match: '\s+'
+    - match: '{{symbolSegment}}'
+      scope: entity.name.function.wolfram
+    - match: ','
+      scope: keyword.operator.Comma.wolfram
+    - match: '(?=[}\]])'
+      pop: true
+    - match: '.'
+      scope: invalid.illegal
+
+  comma:
+    - match: (?:,)
+      scope: keyword.operator.Comma.wolfram punctuation.separator
+      pop: true
+    - match: '.'
+      scope: invalid.illegal
+
+  end_bracket:
+    - match: '\]'
+      scope: punctuation.section.brackets.end.wolfram
+      pop: true
+    - match: '.'
+      scope: invalid.illegal
+
+  single_expression:
+    - match: '(?=[,\]])'
+      pop: true
+    - include: expressions
 
   expressions:
     - include: escaped_character_symbols
@@ -477,7 +580,7 @@ contexts:
     - match: (::)([[:alpha:]][[:alnum:]]*)
       captures:
         1: keyword.operator.MessageName.wolfram
-        2: string.unquoted.wolfram
+        2: string.unquoted.messagename.wolfram
     - match: '::'
       scope: invalid.illegal
     - match: (<<)(?=\s*")
@@ -581,7 +684,7 @@ contexts:
 
   symbols:
 
-$SYMBOLS$
+$$$SYMBOLS$$$
 
     - match: '{{symbolSegment}}(?:`{{symbolSegment}})+(?=\s*(\[(?!\s*\[)|@(?!@)))'
       scope: variable.function.wolfram

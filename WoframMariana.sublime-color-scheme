@@ -43,6 +43,8 @@
         "ztypesetting": "hsl(240, 35%, 60%)",
 
         "string": "hsla(114, 31%, 68%, 0.8)",
+        "message": "var(orange)",
+
         "stringDelim" : "hsla(114, 31%, 68%, 0.5)",
         "unrecognizedBg": "hsl(210, 15%, 33%)",
         "function": "hsl(200, 55%, 66%)",
@@ -61,6 +63,7 @@
         "head": "hsl(250, 40%, 80%)",
         "slot": "hsl(50, 60%, 60%)",
         "operator": "var(blue7)",
+        "predicate": "hsl(200, 55%, 66%)",
 
         "stringPattern": "color(var(plain) blend(var(head) 50%))"
 
@@ -91,37 +94,6 @@
     },
     "rules":
     [
-        // // to make autocomplete icons the right color -- wait these don't work
-        // {"name": "Keyword", "scope": "keyword - (source.c keyword.operator | source.c++ keyword.operator | source.objc keyword.operator | source.objc++ keyword.operator), keyword.operator.word, source.ruby keyword.declaration", "foreground": "var(red2)"}, // symbol, head
-        // {"name": "Type", "scope": "type.declaration", "foreground": "var(plain)", "font_style": "bold"}, // object
-        // {"name": "Namespace", "scope": "namespace.declaration", "foreground": "var(special)"}, // special
-        // {"name": "Variable", "scope": "variable.declaration", "foreground": "var(variable)"}, // variable
-        // {"name": "Navigation", "scope": "navigation.declaration", "foreground": "var(graphics)"}, // graphics
-        // {"name": "Snippet", "scope": "snippet.declaration", "foreground": "var(typesetting)"}, // typesetting
-
-        // {"scope": "colors.blue", "foreground": "var(blue)"},
-        // {"scope": "colors.blueDim", "foreground": "var(blueDim)"},
-        // {"scope": "colors.blueVibrant", "foreground": "var(blue-vibrant)"},
-        // {"scope": "colors.blue2", "foreground": "var(blue2)"},
-        // {"scope": "colors.blue3", "foreground": "var(blue3)"},
-        // {"scope": "colors.blue4", "foreground": "var(blue4)"},
-        // {"scope": "colors.teal", "foreground": "var(teal)"},
-        // {"scope": "colors.blue6", "foreground": "var(blue6)"},
-        // {"scope": "colors.blue7", "foreground": "var(blue7)"},
-        // {"scope": "colors.green", "foreground": "var(green)"},
-        // {"scope": "colors.grey", "foreground": "var(grey)"},
-        // {"scope": "colors.orange", "foreground": "var(orange)"},
-        // {"scope": "colors.orangeDim", "foreground": "var(orangeDim)"},
-        // {"scope": "colors.orange2", "foreground": "var(orange2)"},
-        // {"scope": "colors.orange3", "foreground": "var(orange3)"},
-        // {"scope": "colors.pink", "foreground": "var(pink)"},
-        // {"scope": "colors.purple", "foreground": "var(purple)"},
-        // {"scope": "colors.red", "foreground": "var(red)"},
-        // {"scope": "colors.red2", "foreground": "var(red2)"},
-        // {"scope": "colors.white", "foreground": "var(white)"},
-        // {"scope": "colors.whiteDim", "foreground": "var(whiteDim)"},
-        // {"scope": "colors.white2", "foreground": "var(white2)"},
-        // {"scope": "colors.white3", "foreground": "var(white3)"},
 
         {
             "name": "Slot",
@@ -183,6 +155,11 @@
             "font_style": "bold"
         },
         {
+            "name": "Message name colon",
+            "scope": "keyword.operator.MessageName",
+            "foreground": "var(message)"
+        },
+        {
             "name": "Operators",
             "scope": "keyword.operator",
             "foreground": "var(operator)"
@@ -191,6 +168,18 @@
             "name": "System function",
             "scope": "support.function.builtin",
             "foreground": "var(plain)",
+            "font_style": ""
+        },
+        {
+            "name": "Internal function",
+            "scope": "support.function.internal",
+            "foreground": "var(plain)",
+            "font_style": ""
+        },
+        {
+            "name": "Message function",
+            "scope": "support.function.message",
+            "foreground": "var(message)",
             "font_style": ""
         },
         {
@@ -249,6 +238,12 @@
             "font_style": ""
         },
         {
+            "name": "Operator",
+            "scope": "support.function.operator.wolfram",
+            "foreground": "var(operator)"
+        },
+
+        {
             "name": "MutatingFunction",
             "scope": "support.function.mutating.wolfram",
             "foreground": "var(plain)",
@@ -280,10 +275,21 @@
             "font_style": ""
         },
         {
+            "name": "MetaFunction",
+            "scope": "support.function.meta",
+            "foreground": "var(white)",
+            "font_style": "glow"
+        },
+        {
             "name": "SpecialFunctionOrVariable",
             "scope": "support.function.special",
             "foreground": "var(special)",
             "font_style": ""
+        },
+        {
+            "name": "Predicate",
+            "scope": "support.function.predicate",
+            "foreground": "var(predicate)"
         },
         {
             "name": "CacheFunctionOrVariable",
@@ -308,6 +314,11 @@
             "name": "Comment",
             "scope": "comment, punctuation.definition.comment",
             "foreground": "var(blue6)"
+        },
+        {
+            "name": "Message Name",
+            "scope": "string.unquoted.messagename.wolfram",
+            "foreground": "var(message)"
         },
         {
             "name": "String",
@@ -456,6 +467,13 @@
             "background": "var(red)"
         },
         {
+            "name": "Inappropriate",
+            "scope": "invalid.inappropriate",
+            "foreground": "var(red)",
+            "background": "none",
+            "font_style": "glow"
+        },
+        {
             "name": "Invalid deprecated",
             "scope": "invalid.deprecated",
             "foreground": "var(white2)",
@@ -589,7 +607,6 @@
             "scope": "message.error",
             "foreground": "var(red)"
         },
-
         {
             "scope": "diff.deleted",
             "background": "hsla(357, 45%, 60%, 0.15)",

@@ -1,5 +1,13 @@
 import sublime_plugin
-from .plugin.open import open_file
+import sublime, subprocess, os
+
+def open_file(filepath):
+    if sublime.platform() == "osx":
+        subprocess.Popen(("open", filepath))
+    elif sublime.platform() == "windows":
+        os.startfile(filepath)
+    elif sublime.platform() == "linux":
+        subprocess.Popen(("xdg-open", filepath))
 
 class ContextEditorOpenCommand(sublime_plugin.TextCommand):
     
